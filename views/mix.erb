@@ -1,8 +1,8 @@
-pin = PiPiper::Pin.new(:pin => 22, :direction => :out)
-pin.on
-sleep 2
-pin.off
 <p>this is the mix view</p>
+<% pin = PiPiper::Pin.new(:pin => 22, :direction => :out)  %>
+<% pin.on  %>
+<% sleep 2  %>
+<% pin.off  %>
 <% puts "this is the mix from the mix route" %>
 <% sleep 2.5  %>
 <% puts "now going into the JS" %>
