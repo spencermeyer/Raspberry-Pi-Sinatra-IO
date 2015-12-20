@@ -1,10 +1,9 @@
 <p>this is the mix view</p>
+<% puts "this is from the mix view" %>
 <% pin = PiPiper::Pin.new(:pin => 22, :direction => :out)  %>
 <% pin.on  %>
 <% sleep 2  %>
 <% pin.off  %>
-<% puts "this is the mix from the mix route" %>
-<% sleep 2.5  %>
 <% puts "now going into the JS" %>
 <script type="text/javascript">
     window.location.href="/"
