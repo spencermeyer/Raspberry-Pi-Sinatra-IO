@@ -1,10 +1,10 @@
-pin = PiPiper::Pin.new(:pin => 23, :direction => :out)
-pin.on
-sleep 2
-pin.off
 <p>this is the mix view</p>
 <% puts "this is the mix from the spark route" %>
 <% sleep 1.5  %>
+<% pin = PiPiper::Pin.new(:pin => 23, :direction => :out)  %>
+<% pin.on  %>
+<% sleep 2  %>
+<% pin.off  %>
 <% puts "now going into the JS" %>
 <script type="text/javascript">
     window.location.href="/"
