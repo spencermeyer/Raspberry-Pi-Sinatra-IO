@@ -17,7 +17,7 @@ end
 get '/spark' do
   'and text from spark route router'
   puts "from the spark route this is the router"
-  erb :mix
+  erb :spark
 end
 
 
