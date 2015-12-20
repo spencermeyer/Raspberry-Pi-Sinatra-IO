@@ -1,7 +1,7 @@
 # pisin.rb
 require 'sinatra'
-#require 'pi_piper'
-#include PiPiper
+require 'pi_piper'
+include PiPiper
 set :bind, '0.0.0.0'
 
 get '/' do
