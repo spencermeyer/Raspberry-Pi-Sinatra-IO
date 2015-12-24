@@ -6,9 +6,9 @@
 require 'pi_piper'
 include PiPiper
 
-pin = PiPiper::Pin.new(:pin => 18, :direction => :in, :pull => :up)
+pin = PiPiper::Pin.new(:pin => 24, :direction => :in, :pull => :up)
 
-watch :pin => 18 do
+watch :pin => 24 do
   puts "Pin changed from #{last_value} to #{value}"
 end
 
